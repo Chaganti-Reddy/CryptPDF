@@ -54,12 +54,10 @@ st.markdown(
     </style>
 
     <script>
-    // JavaScript to generate snowflakes
     const snowflakesContainer = document.createElement("div");
     snowflakesContainer.classList.add("snowflakes");
     document.body.appendChild(snowflakesContainer);
 
-    // Function to generate a snowflake
     function createSnowflake() {
         const snowflake = document.createElement("div");
         snowflake.classList.add("snowflake");
@@ -69,13 +67,11 @@ st.markdown(
         snowflake.style.fontSize = `${Math.random() * 1.5 + 0.5}rem`;
         snowflakesContainer.appendChild(snowflake);
 
-        // Remove snowflake after it finishes falling
         setTimeout(() => {
             snowflake.remove();
         }, 10000); // Matches the max animation duration
     }
 
-    // Generate snowflakes at intervals
     setInterval(createSnowflake, 100);
     </script>
     """,
