@@ -1,0 +1,5 @@
+streamlit
+PyPDF2
+pycryptodome
+streamlit-lottie 
+requests
